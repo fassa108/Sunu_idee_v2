@@ -1,8 +1,8 @@
-const URL = CONFIG.url_supabase
-const KEY = CONFIG.key_supabase
+const URL_SUPABASE = CONFIG.url_supabase
+const KEY_SUPABASE = CONFIG.key_supabase
 const database = supabase.createClient(
-    URL,
-    KEY
+    URL_SUPABASE,
+    KEY_SUPABASE
 )
 
 export async function ajouterIdee(titre, categorie, description) {
